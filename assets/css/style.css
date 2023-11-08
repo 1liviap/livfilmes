@@ -41,6 +41,24 @@ font-family: 'Quicksand', sans-serif;
 --section-padding: 100px;
 }
 
+.h1, 
+.h2, 
+.h3{color: var(--white);
+    line-height: 40px;
+}
+
+.h1{
+    font-size: var(--fs-1);
+}
+
+.h2{
+    font-size: var(--fs-2);
+}
+
+.h3{
+    font-size: var(--fs-6);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -142,10 +160,12 @@ button{
     align-items: center;
 }
 
-img{
+.logo img{
     border-radius: 10px;
     width: 210px;
     height: 70px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    
 }
 
 .navbar-link{
@@ -209,4 +229,34 @@ img{
 
 .overlay .active{
     pointer-events: all;
+}
+
+.hero{
+    background: url('../img/banner.png') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-block: var(--section-padding);
+}
+
+.hero-content{
+    margin-top: 60px;
+}
+
+.hero-subtitle{
+    color: var(--citrine);
+    font-size: var(--fs-4);
+    font-weight: var(--fw-700);
+    margin-bottom: 20px;
+}
+
+.hero-title{
+    margin-bottom: 30px;
+}
+
+.hero-title > strong{
+    color: var(--citrine);
 }
